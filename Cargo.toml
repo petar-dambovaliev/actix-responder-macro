@@ -2,7 +2,7 @@
 name = "actix_responder_macro"
 version = "0.0.1"
 authors = ["Petar Dambovaliev <petar.atanasov.1987@gmail.com>"]
-keywords = ["template", "proc_macro", "procmacro", "actix-web", "actix", "actix_responder"]
+keywords = ["proc_macro", "procmacro", "actix-web", "actix", "actix_responder"]
 edition = "2018"
 description = "An attribute macro to transform a response struct to an actix responder"
 repository = "https://github.com/petar-dambovaliev/actix-responder-macro"
