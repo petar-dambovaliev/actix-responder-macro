@@ -18,7 +18,7 @@ so it won't show up in the request response.
 ```rust
 #[actix_responder(meta_attr = "builder(default)")]
 #[derive(TypedBuilder, Serialize, Deserialize)]
-struct SuccessResp {
+pub struct SuccessResp {
     success: bool,
 }
 ```
@@ -63,5 +63,5 @@ use typed_builder::TypedBuilder;
             }
         )"#)]
 #[derive(Serialize, Deserialize, Debug, TypedBuilder, Default)]
-struct ImageResp {...}
+pub struct ImageResp {...}
 ```

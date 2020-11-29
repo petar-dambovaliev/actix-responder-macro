@@ -133,7 +133,7 @@ pub fn actix_responder(args: TokenStream, item: TokenStream) -> TokenStream {
 
         let meta_struct = quote!(
             #[derive(Default, Clone, Debug)]
-            struct #meta_type_name {
+            pub struct #meta_type_name {
                 status_code: Option<actix_web::http::StatusCode>,
                 content_type: Option<String>,
             }
