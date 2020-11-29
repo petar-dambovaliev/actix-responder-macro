@@ -18,7 +18,7 @@ fn it_works_without_meta_attr() {
         json!(a),
         json!(SuccessResp {
             success: false,
-            successresp_metadata: SuccessRespMetadata {
+            metadata: SuccessRespMetadata {
                 status_code: None,
                 content_type: None,
             },

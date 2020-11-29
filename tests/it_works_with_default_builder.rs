@@ -19,7 +19,7 @@ fn it_works_with_default_builder() {
         json!(a),
         json!(SuccessResp {
             success: true,
-            successresp_metadata: SuccessRespMetadata {
+            metadata: SuccessRespMetadata {
                 status_code: None,
                 content_type: None,
             },

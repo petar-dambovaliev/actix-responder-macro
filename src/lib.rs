@@ -44,7 +44,6 @@ fn parse_args(args: AttributeArgs) -> Option<(String, String)> {
 
                     let ident = val[0..end_ident].chars().as_str().to_string();
                     let args = val[end_ident..val.len()].chars().as_str().to_string();
-
                     return Some((ident, args));
                 }
             }
@@ -61,10 +60,7 @@ pub fn actix_responder(args: TokenStream, item: TokenStream) -> TokenStream {
     if let Fields::Named(ref mut named) = input.fields {
         let user_struct_name = format_ident!("{}", input.ident.to_string());
         let meta_type_name = format_ident!("{}Metadata", input.ident.to_string());
-        let meta_field_name = format_ident!(
-            "{}_metadata",
-            user_struct_name.to_string().as_str().to_lowercase()
-        );
+        let meta_field_name = format_ident!("metadata");
 
         let mut punc = Punctuated::new();
 

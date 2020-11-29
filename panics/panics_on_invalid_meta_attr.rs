@@ -8,3 +8,5 @@ use serde::{Deserialize, Serialize};
 struct SuccessResp {
     success: bool,
 }
+
+fn main() {}
