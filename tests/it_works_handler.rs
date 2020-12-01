@@ -17,3 +17,9 @@ pub struct SuccessResp {
 pub async fn health_check() -> SuccessResp {
     SuccessResp::builder().success(true).build()
 }
+
+#[allow(unused)]
+#[test]
+fn it_works_handler() {
+    health_check;
+}
